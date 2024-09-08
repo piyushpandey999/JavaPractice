@@ -1,3 +1,4 @@
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 
 public class RemoveDuplicatesFromString {
@@ -9,7 +10,7 @@ public class RemoveDuplicatesFromString {
         String loweString = str.toLowerCase();
         char[] chararray = loweString.toCharArray();
 
-        LinkedHashSet<Character> uniqueSet = new LinkedHashSet<>();
+        HashSet<Character> uniqueSet = new HashSet<>();
         for (char c : chararray) {
             if (!uniqueSet.contains(c)) {
                 uniqueSet.add(c);
