@@ -8,7 +8,8 @@ public class RemoveLeadingZerosFromaString {
         String str = scanner.nextLine();
         // String str = "0000123405";
         System.out.println("string before removing zeros -" + str);
-//        System.out.println("string after removing zeros by method 1 -" + method1(str));
+        // System.out.println("string after removing zeros by method 1 -" +
+        // method1(str));
         System.out.println("String after removing zeros by method 2 -" + method2(str));
     }
 
@@ -25,9 +26,9 @@ public class RemoveLeadingZerosFromaString {
         return sb.toString();
     }
 
-    public static String method2(String str){
+    public static String method2(String str) {
         StringBuilder sb = new StringBuilder(str);
-        while (sb.length() >0 && sb.charAt(0) == '0')
+        while (sb.length() > 0 && sb.charAt(0) == '0')
             sb.deleteCharAt(0);
         return sb.toString();
     }
