@@ -9,7 +9,7 @@ public class CountOccurenceOfElementsInaList {
         list.add(2);
         list.add(3);
         list.add(3);
-        list.add(34);
+        list.add(4);
 
         Set<Integer> set = new HashSet<Integer>(list);
         for (int i : set) {
