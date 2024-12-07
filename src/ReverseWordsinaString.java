@@ -6,7 +6,7 @@ public class ReverseWordsinaString {
         String[] words = str.split(" ");
         for (int i=words.length-1;i>=0;i--){
 //            rev.append(words[i]);
-            rev = rev+words[i];
+            rev = rev+ " " +words[i];
         }
         System.out.println(rev);
     }
