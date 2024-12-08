@@ -28,7 +28,7 @@ public class RemoveLeadingZerosFromaString {
 
     public static String method2(String str) {
         StringBuilder sb = new StringBuilder(str);
-        while (sb.length() > 0 && sb.charAt(0) == '0')
+        while (!sb.isEmpty() && sb.charAt(0) == '0')
             sb.deleteCharAt(0);
         return sb.toString();
     }
