@@ -1,9 +1,11 @@
 public class Test3 {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+        int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
         String str = "00000000987";
-//        System.out.println(secondLargest(array));
+        String spaces = " this  is the  check ";
+        // System.out.println(secondLargest(array));
         System.out.println(removeleadingzeros2(str));
+        removewhiteSpacesinString(spaces);
     }
 
     public static int secondLargest(int[] input) {
@@ -40,9 +42,17 @@ public class Test3 {
     public static String removeleadingzeros2(String str) {
         int i = 0;
         StringBuilder sb = new StringBuilder(str);
-        while (sb.length() >0 && sb.charAt(0) =='0')
+        while (!sb.isEmpty() && sb.charAt(0) == '0')
             sb.deleteCharAt(0);
 
         return sb.toString();
     }
+
+    public static void removewhiteSpacesinString(String str) {
+        String str2 = str.replaceAll(" ", "");
+        System.out.println(str2);
+        String str3 = str.trim();
+        System.out.println(str3);
+    }
+    // Testing git
 }
