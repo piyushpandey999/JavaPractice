@@ -27,5 +27,11 @@ public class FindDuplicatesInaGivenString {
                 System.out.println(c + " --> " + map.get(c));
             }
         }
+
+        for (Map.Entry<Character,Integer> entry : map.entrySet()) {
+            if (entry.getValue() > 1) {
+                System.out.println(entry.getKey()+" " + entry.getValue());
+            }
+        }
     }
 }
