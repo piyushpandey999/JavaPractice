@@ -34,11 +34,11 @@ public class OccurenceofEachCharacterInAString {
                 charCount.put(c, 1);
             }
         }
-        // System.out.println(str + " -> " + charCount);
-        // ---------- printing the charCount ---------------
-        // for(Map.Entry entry:charCount.entrySet()){
-        // System.out.println((entry.getKey() + " " + entry.getValue()));
-        // }
+         System.out.println(str + " -> " + charCount);
+//         ---------- printing the charCount ---------------
+         for(Map.Entry<Character,Integer> entry:charCount.entrySet()){
+         System.out.println((entry.getKey() + " " + entry.getValue()));
+         }
 
         // to print char having more than 1 occurrence
         for (Map.Entry<Character, Integer> entry : charCount.entrySet()) {
