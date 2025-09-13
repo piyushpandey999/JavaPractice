@@ -6,8 +6,8 @@ public class PeakElementInAnArray {
     public static void main(String[] args) {
 
         int[] ar = {1,2,3,4,5,2,3};
-        System.out.println(findSinglePeak(ar));
-//        System.out.println(findAllPeaks(ar));
+//        System.out.println(findSinglePeak(ar));
+        System.out.println(findAllPeaks(ar));
     }
 
     public static int findSinglePeak(int[] arr){
